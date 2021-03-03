@@ -8,10 +8,12 @@ const client = new Client({
     port: 5432
 })
 
-Client.connect();
+// client.connect();
 
-client.query('select now()', (err: any, res: any) => {
-    console.log('err:: ', err);
-    console.log('res:: ', res);
-    client.end();
-})
+export default client;
+
+// client.query('select now()', (err: any, res: any) => {
+//     console.log('err:: ', err);
+//     console.log('res:: ', res);
+//     client.end();
+// })
